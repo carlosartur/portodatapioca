@@ -17,9 +17,9 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 
-    <link href="/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="/css/magnific-popup.css" rel="stylesheet" type="text/css">
-    <link href="/css/creative.min.css" rel="stylesheet">
+    <link href="{{ url("/css/font-awesome.min.css") }}" rel="stylesheet" type="text/css">
+    <link href="{{ url("/css/magnific-popup.css") }}" rel="stylesheet" type="text/css">
+    <link href="{{ url("/css/creative.min.css") }}" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -81,8 +81,8 @@
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-    <script src="/js/jquery.magnific-popup.min.js"></script>
-    <script src="/js/scrollreveal.min.js"></script>
-    <script src="/js/creative.min.js"></script>
+    <script src="{{ url("/js/jquery.magnific-popup.min.js") }}"></script>
+    <script src="{{ url("/js/scrollreveal.min.js") }}"></script>
+    <script src="{{ url("/js/creative.min.js") }}"></script>
 </body>
 </html>
