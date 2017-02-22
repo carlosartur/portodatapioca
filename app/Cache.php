@@ -8,7 +8,10 @@ class Cache extends Model
 {
     protected $table = 'cache';
     public $timestamps = false;
-
+    /**
+     * Gets all cached values
+     * @return stdClass Caches
+     */
     public function getAllCache()
     {
         $caches = $this->get();
@@ -20,6 +23,11 @@ class Cache extends Model
         return $cache;
     }
 
+    /**
+     * Save a cache value
+     * @param  String $key   Key of the cache
+     * @param  String $value Value of the cache
+     */
     public function saveCache($key, $value)
     {
         $Cache = $this;
