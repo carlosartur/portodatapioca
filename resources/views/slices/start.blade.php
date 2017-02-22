@@ -1,10 +1,10 @@
-<header>
+<header style="background-image: url('{{ asset('images/header.jpg') }}');">
     <div class="header-content">
         <div class="header-content-inner">
-            <h1 id="homeHeading">Your Favorite Source of Free Bootstrap Themes</h1>
+            <h1 id="homeHeading">{{ $cache->titulo_principal }}</h1>
             <hr>
-            <p>Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</p>
-            <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+            <p>{{ $cache->descricao }}</p>
+            <a href="#about" class="btn btn-primary btn-xl page-scroll">{{ $cache->texto_botao }}</a>
         </div>
     </div>
 </header>
