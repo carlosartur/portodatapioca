@@ -95,3 +95,12 @@
         </div>
     </div>
 </section>
+
+<aside class="bg-dark">
+    <div class="container text-center">
+        <div class="call-to-action">
+            <h2>{{ $cache->titulo_promocoes }}</h2>
+            <a href="mailto:{{ $cache->email }}" class="btn btn-default btn-xl sr-button">{{ $cache->texto_botao_promocoes }}</a>
+        </div>
+    </div>
+</aside>
