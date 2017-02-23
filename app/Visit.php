@@ -14,9 +14,12 @@ class Visit extends Model
      */
     public function saveVisit($ip, $user_agent)
     {
-        $this->browser = explode(' ', $user_agent)[10];
-        $os = explode('(', $user_agent)[1];
-        $this->os = explode(';', $os)[0];
+        $browser = explode(' ', $user_agent);
+        $this->browser = isset($browser[10]) ? $browser[10] : '';
+        $os = explode('(', $user_agent);
+        $os = isset($os[1]) ? $os[1] : '';
+        $os = explode(';', $os);
+        $this->os = isset($os[0]) ? $os[0] : '';
         $this->ip = $ip;
         if (!$this->isSameVisit()) {
             $this->save();

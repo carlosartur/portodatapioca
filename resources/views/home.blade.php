@@ -9,6 +9,7 @@
 
                 <div class="panel-body">
                     <a class='btn btn-small btn-info' href="{{ action("HomepageController@editHomePageForm") }}">Personalizar página</a>
+                    <a class='btn btn-small btn-info' href="{{ action("FlavourController@retrieve") }}">Sabores</a>
                 </div>
             </div>
         </div>
